@@ -7,13 +7,10 @@ int main(void)
 {
 	printf("Hello World\n");
 	printf("\n");
-	
-	int x;
-	int y;
 
-	int a;
-	int b;
-	int c;
+	int x, y;
+
+	int a, b, c;
 
 	printf("This 1rst function will take in 2 intergers and return the largest\n");
 	printf("Enter a number: ");
@@ -39,34 +36,18 @@ int main(void)
 int largestnumber(int x, int y)
 {
 	if (x > y)
-	{
 		return x;
-	}
 	else
-	{
 		return y;
-	}
 }
 
 int smallestnumber(int a, int b, int c)
 {
-	if(a < b)
-	{
-		if (a < c)
-		{
-			return a;
-		}
-
-	}
-	else if (b < a)
-	{
-		if (b < c)
-		{
-			return b;
-		}
-	}
+	if ((a < b) && (a < c))
+		return a;
+	if (b < c)
+		return b;
 	else
-	{
 		return c;
-	}
 }
+
